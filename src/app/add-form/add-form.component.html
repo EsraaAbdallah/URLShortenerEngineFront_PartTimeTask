@@ -1,0 +1,7 @@
+<form #Urlform="ngForm">
+    <label>Url</label>
+    <input type="text" id="Url" name="Url" [(ngModel)]="Url" placeholder="Url" />
+    <button type="submit" (click)="submit()">
+        Save
+    </button>
+</form>

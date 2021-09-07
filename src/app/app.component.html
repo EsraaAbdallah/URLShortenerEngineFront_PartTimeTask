@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>new url</th>
+    <th>old url</th>
+  </tr>
+  <tr *ngFor="let item of url">
+    <td (click)="openUrl(item.url)">http://localhost:8080/{{item.segment}}</td>
+    <td>{{item.url}}</td>
+  </tr>
+</table>
+<button (click)="addNewURL()">add</button>
+<router-outlet></router-outlet>
